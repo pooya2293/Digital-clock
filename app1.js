@@ -3,7 +3,7 @@ function showTime(){
     var h = date.getHours(); // 0 - 23
     var m = date.getMinutes(); // 0 - 59
     var s = date.getSeconds(); // 0 - 59
-    // var ms = date.getMilliseconds(); // 0 - 1000
+    //var ms = date.getMilliseconds(); // 0 - 1000
     var session = "AM";
     
     if(h == 0){
@@ -21,7 +21,7 @@ function showTime(){
     s = (s < 10) ? "0" + s : s;
     // ms = (ms < 10) ? "0" + ms : ms;
     
-    var time = h + ":" + m + ":" + s +  " " + session;
+    var time = h + ":" + m + ":" + s +   " " + session;
    	document.getElementById("MyClockDisplay").innerHTML = time;
     document.getElementById("MyClockDisplay").innerText = time;
     document.getElementById("MyClockDisplay").textContent = time;
